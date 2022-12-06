@@ -121,7 +121,7 @@ impl Ord for ReportHost {
 
 /// Metadata about a host, stored as a hashmap
 #[derive(Debug, Default)]
-pub struct HostProperties(HashMap<String, String>);
+pub struct HostProperties(pub HashMap<String, String>);
 
 /// Type alias for ReportItems
 pub type ReportItems = Vec<ReportItem>;
